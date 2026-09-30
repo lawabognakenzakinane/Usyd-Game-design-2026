@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://ulyv6hidtvnj"]
+
+[ext_resource type="PackedScene" uid="uid://dawkslcira5r4" path="res://plantable_areas.tscn" id="1_c7s6e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6lj2"]
+size = Vector2(953, 497)
+
+[node name="Map" type="Node2D" unique_id=1591404005]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1563534138]
+
+[node name="Desert" type="StaticBody2D" parent="." unique_id=1781541067]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Desert" unique_id=1282768908]
+position = Vector2(477.5, 247.5)
+shape = SubResource("RectangleShape2D_e6lj2")
+
+[node name="PlaceHolder" type="ColorRect" parent="Desert" unique_id=1647274676]
+offset_right = 953.0
+offset_bottom = 495.0
+color = Color(1, 0.7019608, 0.37254903, 1)
+
+[node name="Plantable Areas" parent="Desert" unique_id=1535384436 instance=ExtResource("1_c7s6e")]
+position = Vector2(101, 419)
+
+[node name="Plantable Areas2" parent="Desert" unique_id=1642051165 instance=ExtResource("1_c7s6e")]
+position = Vector2(264, 422)
+
+[node name="Plantable Areas3" parent="Desert" unique_id=1248028832 instance=ExtResource("1_c7s6e")]
+position = Vector2(397, 422)
+
+[node name="Plantable Areas4" parent="Desert" unique_id=1615780905 instance=ExtResource("1_c7s6e")]
+position = Vector2(526, 427)
+
+[node name="Plantable Areas5" parent="Desert" unique_id=1066110056 instance=ExtResource("1_c7s6e")]
+position = Vector2(638, 429)
+
+[node name="Plantable Areas6" parent="Desert" unique_id=1715821221 instance=ExtResource("1_c7s6e")]
+position = Vector2(796, 429)
+
+[node name="Plantable Areas7" parent="Desert" unique_id=131365381 instance=ExtResource("1_c7s6e")]
+position = Vector2(171, 366)
+
+[node name="Plantable Areas8" parent="Desert" unique_id=1061165316 instance=ExtResource("1_c7s6e")]
+position = Vector2(316, 365)
+
+[node name="Plantable Areas9" parent="Desert" unique_id=1042884371 instance=ExtResource("1_c7s6e")]
+position = Vector2(443, 367)
+
+[node name="Plantable Areas10" parent="Desert" unique_id=905693 instance=ExtResource("1_c7s6e")]
+position = Vector2(570, 369)
+
+[node name="Plantable Areas11" parent="Desert" unique_id=767656499 instance=ExtResource("1_c7s6e")]
+position = Vector2(692, 368)
+
+[node name="Plantable Areas12" parent="Desert" unique_id=426892601 instance=ExtResource("1_c7s6e")]
+position = Vector2(839, 370)
+
+[node name="Map2" type="StaticBody2D" parent="." unique_id=637344768]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map2" unique_id=1395133178]
+
+[node name="Map3" type="StaticBody2D" parent="." unique_id=987050559]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map3" unique_id=657026347]
