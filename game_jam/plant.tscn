@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://bbk1x23dhkfkc"]
 
-[ext_resource type="Script" uid="uid://kktoi66dbp73" path="res://plant.gd" id="1_t03al"]
+[ext_resource type="PackedScene" uid="uid://bbk1x23dhkfkc" path="res://plant.tscn" id="1_t03al"]
 
-[node name="Plant" type="CharacterBody2D" unique_id=1110712558]
-script = ExtResource("1_t03al")
+[node name="Plant" unique_id=1110712558 instance=ExtResource("1_t03al")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=354893383]
+[node name="Sprite2D" type="Sprite2D" parent="." index="1" unique_id=68251800]
