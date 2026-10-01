@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://bstufyhlpv8x6" path="res://watering_can.gd" id="8_sky72"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i1vam"]
-size = Vector2(22, 22)
+size = Vector2(24, 22)
 
 [node name="User Intertafce" type="Control" unique_id=394505438]
 layout_mode = 3
@@ -114,12 +114,15 @@ offset_bottom = 34.0
 [node name="StaticBody2D" type="StaticBody2D" parent="Hotbar/Watering can" unique_id=835677261]
 script = ExtResource("8_sky72")
 
+[node name="WateringCan" type="Sprite2D" parent="Hotbar/Watering can/StaticBody2D" unique_id=1333790807]
+texture_filter = 1
+position = Vector2(13, 10)
+scale = Vector2(0.84375, 0.875)
+texture = ExtResource("7_0ytqx")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hotbar/Watering can/StaticBody2D" unique_id=1739948540]
 position = Vector2(12, 11)
 shape = SubResource("RectangleShape2D_i1vam")
 
-[node name="WateringCan" type="Sprite2D" parent="Hotbar/Watering can/StaticBody2D/CollisionShape2D" unique_id=1333790807]
-texture_filter = 1
-position = Vector2(1, -1)
-scale = Vector2(0.84375, 0.875)
-texture = ExtResource("7_0ytqx")
+[connection signal="gui_input" from="Hotbar/Shovel" to="Hotbar/Shovel" method="_on_gui_input"]
+[connection signal="gui_input" from="Hotbar/Watering can" to="Hotbar/Watering can/StaticBody2D" method="_on_watering_can_gui_input"]
