@@ -4,8 +4,10 @@
 [ext_resource type="Script" uid="uid://cqvuxvw3l2jnr" path="res://seed.gd" id="3_ee4bf"]
 [ext_resource type="Texture2D" uid="uid://ce31ee6y31rgx" path="res://Asset/item/seed_emu_bush.png" id="3_qtu10"]
 [ext_resource type="Texture2D" uid="uid://vud3tpkcf8vj" path="res://Asset/item/seed_citrus_australasica.png" id="4_iy58a"]
+[ext_resource type="Script" uid="uid://bm6adxlfu07av" path="res://seed_2.gd" id="4_q77pa"]
 [ext_resource type="Texture2D" uid="uid://b2xdwxgy4qwkr" path="res://Asset/item/seed_eucalyptus_gillii.png" id="5_6a6wx"]
 [ext_resource type="Script" uid="uid://v4k1b4v1lj86" path="res://shovel.gd" id="6_6a6wx"]
+[ext_resource type="Script" uid="uid://dmo5fud8tp8dw" path="res://seed_3.gd" id="6_n8582"]
 [ext_resource type="Texture2D" uid="uid://c21m404l5wt7k" path="res://Asset/item/shovel.png" id="6_sky72"]
 [ext_resource type="Texture2D" uid="uid://ckosf0in6uexg" path="res://Asset/item/watering_can.png" id="7_0ytqx"]
 [ext_resource type="Script" uid="uid://bstufyhlpv8x6" path="res://watering_can.gd" id="8_sky72"]
@@ -64,7 +66,7 @@ offset_left = 101.0
 offset_top = 12.0
 offset_right = 122.0
 offset_bottom = 34.0
-script = ExtResource("3_ee4bf")
+script = ExtResource("4_q77pa")
 
 [node name="Seed" type="StaticBody2D" parent="Hotbar/Seed2" unique_id=523105609]
 
@@ -80,7 +82,7 @@ offset_left = 126.0
 offset_top = 11.0
 offset_right = 145.0
 offset_bottom = 34.0
-script = ExtResource("3_ee4bf")
+script = ExtResource("6_n8582")
 
 [node name="Seed" type="StaticBody2D" parent="Hotbar/Seed3" unique_id=44620212]
 
@@ -124,5 +126,8 @@ texture = ExtResource("7_0ytqx")
 position = Vector2(12, 11)
 shape = SubResource("RectangleShape2D_i1vam")
 
+[connection signal="gui_input" from="Hotbar/Seed" to="Hotbar/Seed" method="_on_gui_input"]
+[connection signal="gui_input" from="Hotbar/Seed2" to="Hotbar/Seed2" method="_on_gui_input"]
+[connection signal="gui_input" from="Hotbar/Seed3" to="Hotbar/Seed3" method="_on_gui_input"]
 [connection signal="gui_input" from="Hotbar/Shovel" to="Hotbar/Shovel" method="_on_gui_input"]
 [connection signal="gui_input" from="Hotbar/Watering can" to="Hotbar/Watering can/StaticBody2D" method="_on_watering_can_gui_input"]
