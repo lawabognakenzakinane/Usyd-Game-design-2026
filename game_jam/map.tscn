@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://cn3ww8v7s6y30" path="res://Asset/Map/map/gameJam_2026_map_desert.png" id="1_wijl4"]
 [ext_resource type="PackedScene" uid="uid://cyif08o4lvf11" path="res://Plantable area type 2.tscn" id="3_p5pve"]
 [ext_resource type="PackedScene" uid="uid://4eq3ev6lwf54" path="res://Plantable area type 3.tscn" id="4_urblq"]
-[ext_resource type="Script" uid="uid://cj5msvkftm86w" path="res://camera_2d.gd" id="5_urblq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6lj2"]
 size = Vector2(958, 180)
@@ -19,6 +18,7 @@ position = Vector2(473, 94)
 shape = SubResource("RectangleShape2D_e6lj2")
 
 [node name="GameJam2026MapDesert" type="Sprite2D" parent="Desert" unique_id=1734340668]
+texture_filter = 1
 position = Vector2(469, 94)
 texture = ExtResource("1_wijl4")
 
@@ -102,16 +102,6 @@ position = Vector2(638, 104)
 
 [node name="Plantable area type 16" parent="Desert" unique_id=1454185437 instance=ExtResource("4_urblq")]
 position = Vector2(906, 126)
-
-[node name="Camera2D" type="Camera2D" parent="Desert" unique_id=1563534138]
-position = Vector2(191, 94)
-zoom = Vector2(3.55, 3.55)
-process_callback = 0
-limit_left = 0
-limit_top = 0
-limit_right = 960
-limit_bottom = 180
-script = ExtResource("5_urblq")
 
 [node name="Map2" type="StaticBody2D" parent="." unique_id=637344768]
 position = Vector2(-37, 3)

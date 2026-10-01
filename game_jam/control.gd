@@ -1,0 +1,19 @@
+extends Control
+
+var og_x_position=213
+var og_y_position=167.2
+func _input(event):
+	if event.is_action_pressed("ui_right")==true:
+		og_x_position+=200
+		if og_x_position>853:
+			og_x_position=853
+		self.position=Vector2(og_x_position,og_y_position)
+		
+	if event.is_action_pressed("ui_left")==true:
+		og_x_position-=200
+		if og_x_position<213:
+			og_x_position=213
+		position=Vector2(og_x_position,og_y_position)
+		
+func _ready():
+	self.position=Vector2(og_x_position,og_y_position)

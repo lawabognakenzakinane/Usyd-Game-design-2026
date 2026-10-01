@@ -8,6 +8,7 @@
 radius = 14.0
 
 [node name="Plantable area type 2" type="StaticBody2D" unique_id=1486156061]
+texture_filter = 1
 script = SubResource("GDScript_x7ufw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1431105202]
