@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://tidn2e5b2d7b"]
+
+[ext_resource type="Script" uid="uid://cyk2ry3hvkr6i" path="res://emu_bush.gd" id="1_trd5t"]
+[ext_resource type="Texture2D" uid="uid://l7glaho3t0nh" path="res://Asset/plant/emu_bush_stage_1.png" id="2_f0cvb"]
+[ext_resource type="Texture2D" uid="uid://dou5r6x0yr8dd" path="res://Asset/plant/emu_bush_stage_dead.png" id="3_mopd5"]
+[ext_resource type="Texture2D" uid="uid://ccupvb5fbxvg4" path="res://Asset/plant/emu_bush_stage_2.png" id="4_jeugv"]
+[ext_resource type="Texture2D" uid="uid://byv416ue0c4bl" path="res://Asset/plant/emu_bush_stage_3.png" id="5_xvbx4"]
+[ext_resource type="Texture2D" uid="uid://i600bs2jrkns" path="res://Asset/plant/emu_bush_stage_4.png" id="6_m6vju"]
+[ext_resource type="Texture2D" uid="uid://b8a1fkisb000q" path="res://Asset/plant/emu_bush_stage_5.png" id="7_llna1"]
+[ext_resource type="Texture2D" uid="uid://b1r63xc4e6fvy" path="res://Asset/plant/emu_bush_stage_eatten.png" id="8_y7hnk"]
+[ext_resource type="Script" uid="uid://cvc7cx03mr0f1" path="res://animated_sprite_2d.gd" id="9_bc2s5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7q05p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f0cvb")
+}],
+"loop": true,
+"name": &"base",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_mopd5")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f0cvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jeugv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xvbx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_m6vju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_llna1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_y7hnk")
+}],
+"loop": true,
+"name": &"eatten",
+"speed": 5.0
+}]
+
+[node name="Emu Bush" type="StaticBody2D" unique_id=870495751]
+script = ExtResource("1_trd5t")
+
+[node name="Emu_sprite" type="AnimatedSprite2D" parent="." unique_id=1243742401]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_7q05p")
+animation = &"dead"
+script = ExtResource("9_bc2s5")

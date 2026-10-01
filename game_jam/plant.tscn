@@ -29,6 +29,14 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("4_t2kmy")
+}],
+"loop": true,
+"name": &"base",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("3_o882y")
 }],
 "loop": true,
@@ -148,10 +156,10 @@ script = ExtResource("1_mbetm")
 [node name="Emu Bush" type="StaticBody2D" parent="." unique_id=1057556341]
 script = ExtResource("1_t03al")
 
-[node name="Sprite" type="AnimatedSprite2D" parent="Emu Bush" unique_id=1805077117]
+[node name="Emu_sprite" type="AnimatedSprite2D" parent="Emu Bush" unique_id=1805077117]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_7q05p")
-animation = &"dead"
+animation = &"base"
 script = ExtResource("3_uc8tw")
 
 [node name="Citrus Australasica" type="StaticBody2D" parent="." unique_id=75945599]

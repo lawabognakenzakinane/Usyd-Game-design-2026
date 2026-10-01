@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cafgnbofegbk7" path="res://Asset/Map/map/hole_desert_2.png" id="1_t6kl5"]
 [ext_resource type="Texture2D" uid="uid://rexjr6m2pxaq" path="res://Asset/Map/map/hole_desert_3.png" id="2_l6yf3"]
+[ext_resource type="Script" uid="uid://b3k4cwtcs3f1b" path="res://plant_creation.gd" id="3_evnia"]
 
 [sub_resource type="GDScript" id="GDScript_x7ufw"]
 script/source = "class_name Plant_area_2
@@ -10,7 +11,13 @@ extends StaticBody2D
 var global=preload(\"res://game.gd\")
 
 var is_digged=false
+var emu=preload(\"res://emu_bush.gd\")
+var citru=preload(\"res://citrus_australasica_x.gd\")
+var eucalyptus=preload(\"res://eucalyptus_gillii.gd\")
 @onready var plant = $plant
+
+# Creation of custom signal
+signal plant_is_planted
 
 func _on_control_type_2_gui_input(event: InputEvent) -> void:
 	if Input.is_action_pressed(\"pressed\")==true:
@@ -20,11 +27,11 @@ func _on_control_type_2_gui_input(event: InputEvent) -> void:
 				is_digged=true
 			global.State.PLANT_MODE:
 				if is_digged==true:
-					#get plant info and create new node at the same position
-					pass
+					# EMit signal
+					plant_is_planted.emit()
 				else:
-					#set can plant value as false
-					pass
+					global.cant_plant=true
+					
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t6kl5"]
@@ -51,7 +58,6 @@ animations = [{
 
 [node name="Control" type="Control" unique_id=949873063]
 layout_mode = 3
-
 anchor_top = 0.021000002
 anchor_right = 0.034
 anchor_bottom = 0.085
@@ -63,12 +69,20 @@ offset_bottom = -4.080002
 [node name="Plantable area type 2" type="StaticBody2D" parent="." unique_id=1486156061]
 texture_filter = 1
 position = Vector2(-1, -1)
-=======
-anchors_preset = 0
-offset_right = 26.0
-offset_bottom = 18.0
+script = SubResource("GDScript_x7ufw")
 
-[node name="Plantable area type 2" type="StaticBody2D" parent="." unique_id=1486156061]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plantable area type 2" unique_id=1431105202]
+position = Vector2(24, 21)
+shape = SubResource("CircleShape2D_t6kl5")
+
+[node name="plant" type="AnimatedSprite2D" parent="Plantable area type 2" unique_id=1369351779]
 texture_filter = 1
-position = Vector2(10, 13)
+position = Vector2(29, 17.999996)
+scale = Vector2(1, 0.914)
+sprite_frames = SubResource("SpriteFrames_evnia")
 
+[node name="Plant Creation" type="StaticBody2D" parent="." unique_id=385296682]
+script = ExtResource("3_evnia")
+
+[connection signal="gui_input" from="." to="Plantable area type 2" method="_on_control_type_2_gui_input"]
+[connection signal="plant_is_planted" from="Plantable area type 2" to="Plant Creation" method="_on_plantable_area_type_2_plant_is_planted"]

@@ -1,5 +1,5 @@
 class_name Plant
-extends CharacterBody2D
+extends StaticBody2D
 
 enum Land_type{
 		DESERT,
