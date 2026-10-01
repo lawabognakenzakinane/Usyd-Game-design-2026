@@ -17,3 +17,5 @@ enum Plants{
 	}
 
 static var current_state=State.VISUAL_MODE
+static var current_seed=null
+static var cant_plant=true

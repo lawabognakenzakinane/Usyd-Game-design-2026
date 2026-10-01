@@ -51,21 +51,26 @@ animations = [{
 
 [node name="Control" type="Control" unique_id=949873063]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchor_top = 0.021000002
+anchor_right = 0.034
+anchor_bottom = 0.085
+offset_left = 3.0
+offset_top = -2.6080008
+offset_right = -0.16800308
+offset_bottom = -4.080002
 
 [node name="Plantable area type 2" type="StaticBody2D" parent="." unique_id=1486156061]
 texture_filter = 1
+position = Vector2(-1, -1)
 script = SubResource("GDScript_x7ufw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plantable area type 2" unique_id=1431105202]
-position = Vector2(3, 0)
+position = Vector2(24, 21)
 shape = SubResource("CircleShape2D_t6kl5")
 
 [node name="plant" type="AnimatedSprite2D" parent="Plantable area type 2" unique_id=1369351779]
 texture_filter = 1
-position = Vector2(3, -6)
+position = Vector2(29, 17.999996)
 scale = Vector2(1, 0.914)
 sprite_frames = SubResource("SpriteFrames_evnia")
 
