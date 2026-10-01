@@ -2,15 +2,39 @@
 
 [ext_resource type="Script" uid="uid://kktoi66dbp73" path="res://plant.gd" id="1_mbetm"]
 [ext_resource type="Script" uid="uid://cyk2ry3hvkr6i" path="res://emu_bush.gd" id="1_t03al"]
+[ext_resource type="Texture2D" uid="uid://dou5r6x0yr8dd" path="res://Asset/plant/emu_bush_stage_dead.png" id="3_o882y"]
 [ext_resource type="Script" uid="uid://cvc7cx03mr0f1" path="res://animated_sprite_2d.gd" id="3_uc8tw"]
 [ext_resource type="Texture2D" uid="uid://l7glaho3t0nh" path="res://Asset/plant/emu_bush_stage_1.png" id="4_t2kmy"]
 [ext_resource type="Texture2D" uid="uid://ccupvb5fbxvg4" path="res://Asset/plant/emu_bush_stage_2.png" id="5_o882y"]
 [ext_resource type="Texture2D" uid="uid://byv416ue0c4bl" path="res://Asset/plant/emu_bush_stage_3.png" id="6_668is"]
 [ext_resource type="Texture2D" uid="uid://i600bs2jrkns" path="res://Asset/plant/emu_bush_stage_4.png" id="7_kj8pc"]
 [ext_resource type="Texture2D" uid="uid://b8a1fkisb000q" path="res://Asset/plant/emu_bush_stage_5.png" id="8_nce5f"]
+[ext_resource type="Texture2D" uid="uid://b1r63xc4e6fvy" path="res://Asset/plant/emu_bush_stage_eatten.png" id="9_668is"]
+[ext_resource type="Texture2D" uid="uid://f5ehuapbos8f" path="res://Asset/plant/citrus_australasica_stage_dead.png" id="11_hatku"]
+[ext_resource type="Texture2D" uid="uid://ciwjgjuj26ci2" path="res://Asset/plant/citrus_australasica_stage_1.png" id="11_l55wq"]
+[ext_resource type="Texture2D" uid="uid://dg5d18o3hfphx" path="res://Asset/plant/citrus_australasica_stage_2.png" id="12_ged3i"]
+[ext_resource type="Texture2D" uid="uid://bvfoge0c2lycu" path="res://Asset/plant/citrus_australasica_stage_3.png" id="13_hatku"]
+[ext_resource type="Texture2D" uid="uid://dve3i4stisnsg" path="res://Asset/plant/citrus_australasica_stage_4.png" id="14_nnjp6"]
+[ext_resource type="Texture2D" uid="uid://buof2gd5jc5xn" path="res://Asset/plant/citrus_australasica_stage_5.png" id="15_6iy8o"]
+[ext_resource type="Texture2D" uid="uid://dquj3a6356n1x" path="res://Asset/plant/citrus_australasica_stage_eatten.png" id="17_nnjp6"]
+[ext_resource type="Texture2D" uid="uid://b7ptjqrhky4ee" path="res://Asset/plant/eucalyptus_gillii_stage_dead.png" id="18_rewdi"]
+[ext_resource type="Texture2D" uid="uid://dm4vrx73lndge" path="res://Asset/plant/eucalyptus_gillii_stage_1.png" id="18_y0soo"]
+[ext_resource type="Texture2D" uid="uid://cqyakjhsaiogo" path="res://Asset/plant/eucalyptus_gillii_stage_2.png" id="19_72joi"]
+[ext_resource type="Texture2D" uid="uid://cx7h3kv3imuyw" path="res://Asset/plant/eucalyptus_gillii_stage_3.png" id="20_rewdi"]
+[ext_resource type="Texture2D" uid="uid://bctufsh6vn14j" path="res://Asset/plant/eucalyptus_gillii_stage_4.png" id="21_weamj"]
+[ext_resource type="Texture2D" uid="uid://pavwf7qlpbxs" path="res://Asset/plant/eucalyptus_gillii_stage_5.png" id="22_l0423"]
+[ext_resource type="Texture2D" uid="uid://1ije4d6yngvj" path="res://Asset/plant/eucalyptus_gillii_stage_eatten.png" id="24_weamj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7q05p"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_o882y")
+}],
+"loop": 1,
+"name": &"dead",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("4_t2kmy")
@@ -27,8 +51,94 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_nce5f")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_668is")
+}],
+"loop": 1,
+"name": &"eatten",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mwami"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_hatku")
+}],
+"loop": 1,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_l55wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ged3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hatku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nnjp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6iy8o")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_nnjp6")
+}],
+"loop": 1,
+"name": &"eatten",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_71hcj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_rewdi")
+}],
+"loop": 1,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_y0soo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_72joi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rewdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_weamj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_l0423")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_weamj")
+}],
+"loop": 1,
+"name": &"eatten",
 "speed": 5.0
 }]
 
@@ -39,7 +149,21 @@ script = ExtResource("1_mbetm")
 script = ExtResource("1_t03al")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Emu Bush" unique_id=1805077117]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_7q05p")
-frame = 2
-frame_progress = 0.832978
+animation = &"dead"
 script = ExtResource("3_uc8tw")
+
+[node name="Citrus Australasica" type="StaticBody2D" parent="." unique_id=75945599]
+visible = false
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Citrus Australasica" unique_id=131074942]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_mwami")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=596481753]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="StaticBody2D" unique_id=1868710359]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_71hcj")
+animation = &"eatten"
