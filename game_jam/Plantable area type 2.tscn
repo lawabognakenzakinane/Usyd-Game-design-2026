@@ -3,8 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://cafgnbofegbk7" path="res://Asset/Map/map/hole_desert_2.png" id="1_t6kl5"]
 
 [sub_resource type="GDScript" id="GDScript_x7ufw"]
-script/source = "
-"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t6kl5"]
 radius = 13.341664
