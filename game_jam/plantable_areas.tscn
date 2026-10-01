@@ -13,7 +13,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_ysibd")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -21,20 +21,28 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_7tqu5")
 }],
-"loop": 1,
+"loop": true,
 "name": &"dig",
 "speed": 5.0
 }]
 
-[node name="Plantable Areas" type="StaticBody2D" unique_id=1535384436]
+[node name="Control" type="Control" unique_id=212899294]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Plantable Areas" type="StaticBody2D" parent="." unique_id=1535384436]
 texture_filter = 1
 script = ExtResource("1_qd6br")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=289402965]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plantable Areas" unique_id=289402965]
 position = Vector2(-1, 29)
 shape = SubResource("CircleShape2D_oxhxu")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=278179878]
+[node name="plant" type="AnimatedSprite2D" parent="Plantable Areas" unique_id=278179878]
 texture_filter = 1
 position = Vector2(-1, 23)
 sprite_frames = SubResource("SpriteFrames_mwami")
+
+[connection signal="gui_input" from="." to="Plantable Areas" method="_on_control_gui_input"]

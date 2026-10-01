@@ -31,7 +31,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_o882y")
 }],
-"loop": 1,
+"loop": true,
 "name": &"dead",
 "speed": 5.0
 }, {
@@ -51,7 +51,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_nce5f")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -59,7 +59,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("9_668is")
 }],
-"loop": 1,
+"loop": true,
 "name": &"eatten",
 "speed": 5.0
 }]
@@ -70,7 +70,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_hatku")
 }],
-"loop": 1,
+"loop": true,
 "name": &"dead",
 "speed": 5.0
 }, {
@@ -90,7 +90,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_6iy8o")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -98,7 +98,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_nnjp6")
 }],
-"loop": 1,
+"loop": true,
 "name": &"eatten",
 "speed": 5.0
 }]
@@ -109,7 +109,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("18_rewdi")
 }],
-"loop": 1,
+"loop": true,
 "name": &"dead",
 "speed": 5.0
 }, {
@@ -129,7 +129,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("22_l0423")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -137,7 +137,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("24_weamj")
 }],
-"loop": 1,
+"loop": true,
 "name": &"eatten",
 "speed": 5.0
 }]
@@ -161,9 +161,9 @@ visible = false
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_mwami")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=596481753]
+[node name="Eucalyptus gillii" type="StaticBody2D" parent="." unique_id=596481753]
 
-[node name="Sprite" type="AnimatedSprite2D" parent="StaticBody2D" unique_id=1868710359]
+[node name="Sprite" type="AnimatedSprite2D" parent="Eucalyptus gillii" unique_id=1868710359]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_71hcj")
 animation = &"eatten"

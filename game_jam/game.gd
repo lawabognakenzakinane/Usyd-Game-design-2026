@@ -10,4 +10,10 @@ enum State{
 	PLANT_MODE
 }
 
+enum Plants{
+	EMU_BUSH,
+	CITRUS_AUSTRALASICA,
+	EUCALYPTUS_GILLII
+	}
+
 static var current_state=State.VISUAL_MODE

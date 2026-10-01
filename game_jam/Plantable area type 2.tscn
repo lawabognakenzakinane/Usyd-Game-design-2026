@@ -4,15 +4,27 @@
 [ext_resource type="Texture2D" uid="uid://rexjr6m2pxaq" path="res://Asset/Map/map/hole_desert_3.png" id="2_l6yf3"]
 
 [sub_resource type="GDScript" id="GDScript_x7ufw"]
-script/source = "extends StaticBody2D
+script/source = "class_name Plant_area_2
+extends StaticBody2D
 
 var global=preload(\"res://game.gd\")
 
+var is_digged=false
+@onready var plant = $plant
 
-func _on_control_gui_input(event: InputEvent) -> void:
+func _on_control_type_2_gui_input(event: InputEvent) -> void:
 	if Input.is_action_pressed(\"pressed\")==true:
-		global.current_state=main.State.PLANT_MODE
-		print(\"Plant area clicked\")
+		match global.current_state:
+			global.State.DIGGING_MODE:
+				plant.play(\"dig\")
+				is_digged=true
+			global.State.PLANT_MODE:
+				if is_digged==true:
+					#get plant info and create new node at the same position
+					pass
+				else:
+					#set can plant value as false
+					pass
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t6kl5"]
@@ -51,11 +63,10 @@ script = SubResource("GDScript_x7ufw")
 position = Vector2(3, 0)
 shape = SubResource("CircleShape2D_t6kl5")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Plantable area type 2/CollisionShape2D" unique_id=1369351779]
+[node name="plant" type="AnimatedSprite2D" parent="Plantable area type 2" unique_id=1369351779]
 texture_filter = 1
-position = Vector2(0, -6)
+position = Vector2(3, -6)
 scale = Vector2(1, 0.914)
 sprite_frames = SubResource("SpriteFrames_evnia")
-animation = &"dig"
 
-[connection signal="gui_input" from="." to="Plantable area type 2" method="_on_control_gui_input"]
+[connection signal="gui_input" from="." to="Plantable area type 2" method="_on_control_type_2_gui_input"]

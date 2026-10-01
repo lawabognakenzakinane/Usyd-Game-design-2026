@@ -1,19 +1,51 @@
 [gd_scene format=3 uid="uid://2l0g86lvg45t"]
 
 [ext_resource type="Texture2D" uid="uid://euyn71lt86us" path="res://Asset/Map/map/hole_desert_1.png" id="1_dhyf3"]
+[ext_resource type="Texture2D" uid="uid://rexjr6m2pxaq" path="res://Asset/Map/map/hole_desert_3.png" id="2_s514y"]
 
 [sub_resource type="GDScript" id="GDScript_x7ufw"]
 script/source = "extends StaticBody2D
 var global=preload(\"res://game.gd\")
 
-func _on_control_gui_input(event: InputEvent) -> void:
+var is_digged=false
+@onready var plant=$plant
+
+func _on_control_type_3_gui_input(event: InputEvent) -> void:
 	if Input.is_action_pressed(\"pressed\")==true:
-		global.current_state=main.State.PLANT_MODE
-		print(\"Plant area mode type 2\")
+		match global.current_state:
+			global.State.DIGGING_MODE:
+				plant.play(\"dig\")
+				is_digged=true
+			global.State.PLANT_MODE:
+				if is_digged==true:
+					#get plant info and create new node at the same position
+					pass
+				else:
+					#set can plant value as false
+					pass
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dhyf3"]
 radius = 14.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ap806"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dhyf3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_s514y")
+}],
+"loop": true,
+"name": &"dig",
+"speed": 5.0
+}]
 
 [node name="Control" type="Control" unique_id=212830288]
 layout_mode = 3
@@ -29,8 +61,10 @@ script = SubResource("GDScript_x7ufw")
 position = Vector2(1, 1)
 shape = SubResource("CircleShape2D_dhyf3")
 
-[node name="HoleDesert1" type="Sprite2D" parent="Plantable area type 3" unique_id=1560807921]
-position = Vector2(1, -4)
-texture = ExtResource("1_dhyf3")
+[node name="plant" type="AnimatedSprite2D" parent="Plantable area type 3" unique_id=107801457]
+texture_filter = 1
+position = Vector2(3, -6)
+scale = Vector2(1, 0.914)
+sprite_frames = SubResource("SpriteFrames_ap806")
 
-[connection signal="gui_input" from="." to="Plantable area type 3" method="_on_control_gui_input"]
+[connection signal="gui_input" from="." to="Plantable area type 3" method="_on_control_type_3_gui_input"]

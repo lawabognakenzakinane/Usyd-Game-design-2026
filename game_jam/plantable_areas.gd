@@ -1,13 +1,20 @@
 extends StaticBody2D
 
-var Seed=preload("res://seed.gd")
-var main=preload("res://game.gd")
+var global=preload("res://game.gd")
 
+var is_digged=false
+@onready var plant = $plant
 
-func _input(event):
-	if event.is_action_pressed("pressed") :
-		#and Seed.plant_selection==true
-		#main.position_plant=position
-		pass
-		
-		
+func _on_control_gui_input(event: InputEvent) -> void:
+	if Input.is_action_pressed("pressed")==true:
+		match global.current_state:
+			global.State.DIGGING_MODE:
+				plant.play("dig")
+				is_digged=true
+			global.State.PLANT_MODE:
+				if is_digged==true:
+					#get plant info and create new node at the same position
+					pass
+				else:
+					#set can plant value as false
+					pass
