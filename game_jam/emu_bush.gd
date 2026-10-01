@@ -3,10 +3,7 @@ extends Plant
 
 var new_plant=Plant.new("Emu Bush",Water_requirement.LOW,Sun_requirement.FULL,Land_type.DESERT)
 
-func _process(delta):
-	match new_plant:
-		Plant_state.SEED:
-			Sprite.
-	
+
+
 	
 	
