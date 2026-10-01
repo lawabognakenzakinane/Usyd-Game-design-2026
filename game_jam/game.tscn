@@ -5,30 +5,32 @@
 [ext_resource type="Script" uid="uid://cj5msvkftm86w" path="res://camera_2d.gd" id="3_feb5d"]
 
 [node name="Game" type="Node2D" unique_id=1522055162]
+position = Vector2(1, 0)
 
 [node name="Map" parent="." unique_id=1591404005 instance=ExtResource("1_80nbo")]
 position = Vector2(3, 1)
 
-[node name="User Intertafce" parent="." unique_id=394505438 instance=ExtResource("2_e2o6t")]
-process_mode = 3
-anchors_preset = 0
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 422.0
-offset_top = 169.0
-offset_right = 422.0
-offset_bottom = 169.0
-grow_horizontal = 1
-grow_vertical = 1
-focus_neighbor_left = NodePath(".")
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=617628245]
-position = Vector2(0, 94)
+position = Vector2(635, -1)
+anchor_mode = 0
 zoom = Vector2(3.55, 3.55)
 limit_left = -1
 limit_top = 0
 limit_right = 959
 limit_bottom = 180
 script = ExtResource("3_feb5d")
+
+[node name="User Intertafce" parent="Camera2D" unique_id=394505438 instance=ExtResource("2_e2o6t")]
+process_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 213.0
+offset_top = 170.0
+offset_right = 213.0
+offset_bottom = 170.0
+grow_horizontal = 1
+grow_vertical = 1
+focus_neighbor_left = NodePath(".")

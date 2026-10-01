@@ -1,9 +1,13 @@
 extends StaticBody2D
 
-##Essentially when clicked it shows the different option (so it calls the ui)
-@onready var button="res://control.tscn"
+var Seed=preload("res://seed.gd")
+var main=preload("res://game.gd")
+
+
 func _input(event):
-	if event is InputEventMouseButton:
-		#Calls the relevant ui
+	if event.is_action_pressed("pressed") :
+		#and Seed.plant_selection==true
+		#main.position_plant=position
 		pass
+		
 		

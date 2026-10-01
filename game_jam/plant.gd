@@ -105,6 +105,14 @@ func reset_requirements():
 #Taking damage from enemies	
 func take_damage(damage):
 	_health-=damage
+
+func setup(position):
+	position=position
+	show()
+	
+func _ready():
+	pass
+	
 	
 
 
