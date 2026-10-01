@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7wij3q6sg6go"
-path="res://.godot/imported/gameJam_2026_rabbit_walk1.png-8cc1b41adac23a3f9b881e62839a8e01.ctex"
+uid="uid://dxq4xkv06q16t"
+path="res://.godot/imported/gameJam_2026_rabbit_interact1.png-87364ab963ab40845d8d7f3523afc906.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entity/gameJam_2026_rabbit_walk1.png"
-dest_files=["res://.godot/imported/gameJam_2026_rabbit_walk1.png-8cc1b41adac23a3f9b881e62839a8e01.ctex"]
+source_file="res://Asset/entity/gameJam_2026_rabbit_interact1.png"
+dest_files=["res://.godot/imported/gameJam_2026_rabbit_interact1.png-87364ab963ab40845d8d7f3523afc906.ctex"]
 
 [params]
 

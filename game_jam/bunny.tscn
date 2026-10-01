@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://7c7l00xbtlby"]
 
-[ext_resource type="Texture2D" uid="uid://m2jsmt3dcs18" path="res://Asset/entity/gameJam_2026_rabbit.png" id="1_u834r"]
+[ext_resource type="Texture2D" uid="uid://cr4b5qrqxk26r" path="res://Asset/entity/gameJam_2026_rabbit.png" id="1_u834r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dvrf6"]
 atlas = ExtResource("1_u834r")
@@ -74,7 +74,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gs0sc")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -91,7 +91,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qx6ai")
 }],
-"loop": true,
+"loop": 1,
 "name": &"eat",
 "speed": 5.0
 }, {
@@ -105,7 +105,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_76uj3")
 }],
-"loop": true,
+"loop": 1,
 "name": &"interact",
 "speed": 5.0
 }, {
@@ -125,7 +125,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_njyta")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 10.0
 }]
@@ -133,5 +133,5 @@ animations = [{
 [node name="bunny" type="Node2D" unique_id=1251515392]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2004262737]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_wtqm1")
-animation = &"walk"
