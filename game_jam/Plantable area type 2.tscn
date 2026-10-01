@@ -52,11 +52,12 @@ animations = [{
 [node name="Control" type="Control" unique_id=949873063]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 26.0
+offset_bottom = 18.0
 
 [node name="Plantable area type 2" type="StaticBody2D" parent="." unique_id=1486156061]
 texture_filter = 1
+position = Vector2(10, 13)
 script = SubResource("GDScript_x7ufw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plantable area type 2" unique_id=1431105202]
