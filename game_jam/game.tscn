@@ -6,11 +6,9 @@
 [ext_resource type="Script" uid="uid://cj5msvkftm86w" path="res://camera_2d.gd" id="3_feb5d"]
 
 [node name="Game" type="Node2D" unique_id=1522055162]
-position = Vector2(1, 0)
 script = ExtResource("1_fc0e3")
 
 [node name="Map" parent="." unique_id=1591404005 instance=ExtResource("1_80nbo")]
-position = Vector2(3, 1)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=617628245]
 position = Vector2(635, -1)

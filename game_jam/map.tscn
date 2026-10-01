@@ -19,89 +19,107 @@ shape = SubResource("RectangleShape2D_e6lj2")
 
 [node name="GameJam2026MapDesert" type="Sprite2D" parent="Desert" unique_id=1734340668]
 texture_filter = 1
-position = Vector2(469, 94)
+position = Vector2(469, 93)
 texture = ExtResource("1_wijl4")
 
-[node name="Plantable Areas" parent="Desert" unique_id=1535384436 instance=ExtResource("1_c7s6e")]
-position = Vector2(36, 105)
+[node name="Plantable Areas13" parent="Desert" unique_id=1535384436 instance=ExtResource("1_c7s6e")]
+position = Vector2(70, 122)
+
+[node name="Plantable Areas" parent="Desert" unique_id=285955447 instance=ExtResource("1_c7s6e")]
+position = Vector2(39, 74)
 
 [node name="Plantable Areas2" parent="Desert" unique_id=1642051165 instance=ExtResource("1_c7s6e")]
-position = Vector2(183, 107)
+position = Vector2(198, 122)
 
 [node name="Plantable Areas3" parent="Desert" unique_id=1248028832 instance=ExtResource("1_c7s6e")]
 position = Vector2(392, 77)
 
 [node name="Plantable Areas4" parent="Desert" unique_id=1615780905 instance=ExtResource("1_c7s6e")]
-position = Vector2(465, 76)
+position = Vector2(454, 98)
 
 [node name="Plantable Areas5" parent="Desert" unique_id=1066110056 instance=ExtResource("1_c7s6e")]
-position = Vector2(662, 107)
+position = Vector2(806, 121)
 
 [node name="Plantable Areas6" parent="Desert" unique_id=1715821221 instance=ExtResource("1_c7s6e")]
-position = Vector2(785, 111)
+position = Vector2(774, 99)
 
 [node name="Plantable Areas7" parent="Desert" unique_id=131365381 instance=ExtResource("1_c7s6e")]
-position = Vector2(152, 77)
+position = Vector2(166, 74)
 
 [node name="Plantable Areas8" parent="Desert" unique_id=1061165316 instance=ExtResource("1_c7s6e")]
-position = Vector2(332, 75)
+position = Vector2(359, 98)
 
 [node name="Plantable Areas9" parent="Desert" unique_id=1042884371 instance=ExtResource("1_c7s6e")]
-position = Vector2(561, 104)
+position = Vector2(583, 98)
 
 [node name="Plantable Areas10" parent="Desert" unique_id=905693 instance=ExtResource("1_c7s6e")]
-position = Vector2(592, 75)
+position = Vector2(710, 122)
 
 [node name="Plantable Areas11" parent="Desert" unique_id=767656499 instance=ExtResource("1_c7s6e")]
-position = Vector2(760, 75)
+position = Vector2(742, 75)
 
 [node name="Plantable Areas12" parent="Desert" unique_id=426892601 instance=ExtResource("1_c7s6e")]
-position = Vector2(864, 83)
+position = Vector2(871, 74)
 
 [node name="Plantable area type 3" parent="Desert" unique_id=1486156061 instance=ExtResource("3_p5pve")]
-position = Vector2(67, 104)
+position = Vector2(33, 151)
+
+[node name="Plantable area type 17" parent="Desert" unique_id=167121035 instance=ExtResource("3_p5pve")]
+position = Vector2(129, 151)
 
 [node name="Plantable area type 4" parent="Desert" unique_id=2143017727 instance=ExtResource("3_p5pve")]
-position = Vector2(97, 135)
+position = Vector2(97, 127)
+
+[node name="Plantable area type 18" parent="Desert" unique_id=366057114 instance=ExtResource("3_p5pve")]
+position = Vector2(257, 103)
 
 [node name="Plantable area type 5" parent="Desert" unique_id=767152624 instance=ExtResource("3_p5pve")]
-position = Vector2(238, 104)
+position = Vector2(225, 127)
 
 [node name="Plantable area type 6" parent="Desert" unique_id=1870581439 instance=ExtResource("3_p5pve")]
-position = Vector2(612, 134)
+position = Vector2(546, 151)
 
 [node name="Plantable area type 7" parent="Desert" unique_id=1995471263 instance=ExtResource("3_p5pve")]
-position = Vector2(535, 104)
+position = Vector2(481, 103)
 
 [node name="Plantable area type 8" parent="Desert" unique_id=1518281864 instance=ExtResource("3_p5pve")]
-position = Vector2(727, 138)
+position = Vector2(674, 128)
 
 [node name="Plantable area type 9" parent="Desert" unique_id=557674599 instance=ExtResource("3_p5pve")]
-position = Vector2(701, 104)
+position = Vector2(705, 103)
 
 [node name="Plantable area type 10" parent="Desert" unique_id=2025137019 instance=ExtResource("3_p5pve")]
-position = Vector2(818, 107)
+position = Vector2(818, 103)
 
 [node name="Plantable area type 11" parent="Desert" unique_id=689910978 instance=ExtResource("3_p5pve")]
-position = Vector2(859, 144)
+position = Vector2(865, 127)
 
 [node name="Plantable area type 2" parent="Desert" unique_id=52387165 instance=ExtResource("4_urblq")]
-position = Vector2(276, 138)
+position = Vector2(229, 101)
 
 [node name="Plantable area type 12" parent="Desert" unique_id=1857558240 instance=ExtResource("4_urblq")]
-position = Vector2(353, 138)
+position = Vector2(357, 149)
 
 [node name="Plantable area type 13" parent="Desert" unique_id=378467873 instance=ExtResource("4_urblq")]
-position = Vector2(431, 137)
+position = Vector2(421, 149)
 
 [node name="Plantable area type 14" parent="Desert" unique_id=1139826430 instance=ExtResource("4_urblq")]
-position = Vector2(486, 136)
+position = Vector2(516, 125)
 
 [node name="Plantable area type 15" parent="Desert" unique_id=280198762 instance=ExtResource("4_urblq")]
-position = Vector2(638, 104)
+position = Vector2(677, 101)
 
 [node name="Plantable area type 16" parent="Desert" unique_id=1454185437 instance=ExtResource("4_urblq")]
-position = Vector2(906, 126)
+position = Vector2(899, 125)
+
+[node name="Plantable area type 19" parent="Desert" unique_id=2141525781 instance=ExtResource("3_p5pve")]
+position = Vector2(257, 151)
+
+[node name="Plantable area type 21" parent="Desert" unique_id=1975026068 instance=ExtResource("3_p5pve")]
+position = Vector2(386, 127)
+
+[node name="Plantable area type 20" parent="Desert" unique_id=525220629 instance=ExtResource("3_p5pve")]
+position = Vector2(481, 151)
 
 [node name="Map2" type="StaticBody2D" parent="." unique_id=637344768]
 position = Vector2(-37, 3)
