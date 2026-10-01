@@ -23,163 +23,300 @@ position = Vector2(469, 93)
 texture = ExtResource("1_wijl4")
 
 [node name="Plantable Areas13" parent="Dessert" unique_id=1535384436 instance=ExtResource("1_c7s6e")]
-position = Vector2(74, 110)
-
-[node name="Plantable Areas" parent="Dessert" unique_id=285955447 instance=ExtResource("1_c7s6e")]
-position = Vector2(39, 74)
-
-[node name="Plantable Areas2" parent="Dessert" unique_id=1642051165 instance=ExtResource("1_c7s6e")]
-position = Vector2(196, 108)
-
-[node name="Plantable Areas3" parent="Dessert" unique_id=1248028832 instance=ExtResource("1_c7s6e")]
-position = Vector2(392, 77)
-
-[node name="Plantable Areas4" parent="Dessert" unique_id=1615780905 instance=ExtResource("1_c7s6e")]
-position = Vector2(454, 98)
-
-[node name="Plantable Areas5" parent="Dessert" unique_id=1066110056 instance=ExtResource("1_c7s6e")]
-position = Vector2(810, 108)
-
-[node name="Plantable Areas6" parent="Dessert" unique_id=1715821221 instance=ExtResource("1_c7s6e")]
-position = Vector2(774, 99)
-
-[node name="Plantable Areas7" parent="Dessert" unique_id=131365381 instance=ExtResource("1_c7s6e")]
-position = Vector2(166, 74)
-
-[node name="Plantable Areas8" parent="Dessert" unique_id=1061165316 instance=ExtResource("1_c7s6e")]
-position = Vector2(359, 98)
-
-[node name="Plantable Areas9" parent="Dessert" unique_id=1042884371 instance=ExtResource("1_c7s6e")]
-position = Vector2(583, 98)
-
-[node name="Plantable Areas10" parent="Dessert" unique_id=905693 instance=ExtResource("1_c7s6e")]
-position = Vector2(715, 106)
-
-[node name="Plantable Areas11" parent="Dessert" unique_id=767656499 instance=ExtResource("1_c7s6e")]
-position = Vector2(742, 75)
-
-[node name="Plantable Areas12" parent="Dessert" unique_id=426892601 instance=ExtResource("1_c7s6e")]
-position = Vector2(871, 74)
-
-[node name="Plantable area type 3" parent="Dessert" unique_id=1486156061 instance=ExtResource("3_p5pve")]
-offset_left = 32.0
-offset_top = 136.0
-offset_right = 72.0
-offset_bottom = 176.0
-
-[node name="Plantable area type 17" parent="Dessert" unique_id=167121035 instance=ExtResource("3_p5pve")]
-offset_left = 128.0
-offset_top = 139.0
-offset_right = 168.0
-offset_bottom = 179.0
-
-[node name="Plantable area type 4" parent="Dessert" unique_id=2143017727 instance=ExtResource("3_p5pve")]
-offset_left = 96.0
-offset_top = 116.0
-offset_right = 136.0
-offset_bottom = 156.0
-
-[node name="Plantable area type 18" parent="Dessert" unique_id=366057114 instance=ExtResource("3_p5pve")]
-offset_left = 257.0
-offset_top = 103.0
-offset_right = 297.0
-offset_bottom = 143.0
-
-[node name="Plantable area type 5" parent="Dessert" unique_id=767152624 instance=ExtResource("3_p5pve")]
-offset_left = 225.0
-offset_top = 127.0
-offset_right = 265.0
-offset_bottom = 167.0
-
-[node name="Plantable area type 6" parent="Dessert" unique_id=1870581439 instance=ExtResource("3_p5pve")]
-offset_left = 543.0
-offset_top = 142.0
-offset_right = 583.0
-offset_bottom = 182.0
-
-[node name="Plantable area type 7" parent="Dessert" unique_id=1995471263 instance=ExtResource("3_p5pve")]
-offset_left = 481.0
-offset_top = 103.0
-offset_right = 521.0
-offset_bottom = 143.0
-
-[node name="Plantable area type 8" parent="Dessert" unique_id=1518281864 instance=ExtResource("3_p5pve")]
-offset_left = 670.0
-offset_top = 128.0
-offset_right = 710.0
-offset_bottom = 168.0
-
-[node name="Plantable area type 9" parent="Dessert" unique_id=557674599 instance=ExtResource("3_p5pve")]
-offset_left = 705.0
-offset_top = 103.0
-offset_right = 745.0
-offset_bottom = 143.0
-
-[node name="Plantable area type 10" parent="Dessert" unique_id=2025137019 instance=ExtResource("3_p5pve")]
-offset_left = 818.0
-offset_top = 103.0
-offset_right = 858.0
-offset_bottom = 143.0
-
-[node name="Plantable area type 11" parent="Dessert" unique_id=689910978 instance=ExtResource("3_p5pve")]
-offset_left = 865.0
-offset_top = 127.0
-offset_right = 905.0
-offset_bottom = 167.0
-
-[node name="Plantable area type 2" parent="Dessert" unique_id=52387165 instance=ExtResource("4_urblq")]
-offset_left = 229.0
-offset_top = 101.0
-offset_right = 269.0
-offset_bottom = 141.0
-
-[node name="Plantable area type 12" parent="Dessert" unique_id=1857558240 instance=ExtResource("4_urblq")]
-offset_left = 328.0
-offset_top = 137.0
-offset_right = 368.0
-offset_bottom = 177.0
-
-[node name="Plantable area type 13" parent="Dessert" unique_id=378467873 instance=ExtResource("4_urblq")]
-offset_left = 416.0
-offset_top = 140.0
-offset_right = 456.0
-offset_bottom = 180.0
-
-[node name="Plantable area type 14" parent="Dessert" unique_id=1139826430 instance=ExtResource("4_urblq")]
-offset_left = 514.0
-offset_top = 122.0
-offset_right = 554.0
-offset_bottom = 162.0
-
-[node name="Plantable area type 15" parent="Dessert" unique_id=280198762 instance=ExtResource("4_urblq")]
-offset_left = 677.0
-offset_top = 101.0
-offset_right = 717.0
-offset_bottom = 141.0
-
-[node name="Plantable area type 16" parent="Dessert" unique_id=1454185437 instance=ExtResource("4_urblq")]
-offset_left = 899.0
-offset_top = 125.0
-offset_right = 939.0
+offset_left = 53.0
+offset_top = 134.0
+offset_right = 84.0
 offset_bottom = 165.0
 
-[node name="Plantable area type 19" parent="Dessert" unique_id=2141525781 instance=ExtResource("3_p5pve")]
-offset_left = 264.0
+[node name="Plantable Areas" parent="Dessert" unique_id=285955447 instance=ExtResource("1_c7s6e")]
+offset_left = 22.0
+offset_top = 86.0
+offset_right = 54.0
+offset_bottom = 118.0
+
+[node name="Plantable Areas2" parent="Dessert" unique_id=1642051165 instance=ExtResource("1_c7s6e")]
+offset_left = 181.0
+offset_top = 134.0
+offset_right = 213.0
+offset_bottom = 165.0
+
+[node name="Plantable Areas3" parent="Dessert" unique_id=1248028832 instance=ExtResource("1_c7s6e")]
+offset_left = 405.0
+offset_top = 86.0
+offset_right = 435.0
+offset_bottom = 116.0
+
+[node name="Plantable Areas4" parent="Dessert" unique_id=1615780905 instance=ExtResource("1_c7s6e")]
+offset_left = 461.0
+offset_top = 109.0
+offset_right = 492.0
+offset_bottom = 138.0
+
+[node name="Plantable Areas5" parent="Dessert" unique_id=1066110056 instance=ExtResource("1_c7s6e")]
+offset_left = 822.0
+offset_top = 86.0
+offset_right = 853.0
+offset_bottom = 117.0
+
+[node name="Plantable Areas6" parent="Dessert" unique_id=1715821221 instance=ExtResource("1_c7s6e")]
+offset_left = 790.0
+offset_top = 108.0
+offset_right = 820.0
+offset_bottom = 136.0
+
+[node name="Plantable Areas7" parent="Dessert" unique_id=131365381 instance=ExtResource("1_c7s6e")]
+offset_left = 149.0
+offset_top = 86.0
+offset_right = 181.0
+offset_bottom = 118.0
+
+[node name="Plantable Areas8" parent="Dessert" unique_id=1061165316 instance=ExtResource("1_c7s6e")]
+offset_left = 342.0
+offset_top = 86.0
+offset_right = 373.0
+offset_bottom = 115.0
+
+[node name="Plantable Areas9" parent="Dessert" unique_id=1042884371 instance=ExtResource("1_c7s6e")]
+offset_left = 566.0
+offset_top = 86.0
+offset_right = 598.0
+offset_bottom = 116.0
+
+[node name="Plantable Areas10" parent="Dessert" unique_id=905693 instance=ExtResource("1_c7s6e")]
+offset_left = 726.0
+offset_top = 110.0
+offset_right = 755.0
+offset_bottom = 140.0
+
+[node name="Plantable Areas11" parent="Dessert" unique_id=767656499 instance=ExtResource("1_c7s6e")]
+offset_left = 757.0
+offset_top = 133.0
+offset_right = 788.0
+offset_bottom = 162.0
+
+[node name="Plantable Areas12" parent="Dessert" unique_id=426892601 instance=ExtResource("1_c7s6e")]
+offset_left = 853.0
+offset_top = 110.0
+offset_right = 883.0
+offset_bottom = 139.0
+
+[node name="Plantable area type 3" parent="Dessert" unique_id=1486156061 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 23.0
+offset_top = 137.0
+offset_right = 49.0
+offset_bottom = 163.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 17" parent="Dessert" unique_id=167121035 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 119.0
+offset_top = 137.0
+offset_right = 145.0
+offset_bottom = 163.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 4" parent="Dessert" unique_id=2143017727 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 87.0
+offset_top = 113.0
+offset_right = 113.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 18" parent="Dessert" unique_id=366057114 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 247.0
+offset_top = 89.0
+offset_right = 273.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 5" parent="Dessert" unique_id=767152624 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 215.0
+offset_top = 113.0
+offset_right = 241.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 6" parent="Dessert" unique_id=1870581439 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 534.0
 offset_top = 138.0
-offset_right = 304.0
-offset_bottom = 178.0
+offset_right = 559.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 7" parent="Dessert" unique_id=1995471263 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 502.0
+offset_top = 89.0
+offset_right = 528.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 8" parent="Dessert" unique_id=1518281864 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 663.0
+offset_top = 137.0
+offset_right = 691.0
+offset_bottom = 164.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 9" parent="Dessert" unique_id=557674599 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 694.0
+offset_top = 89.0
+offset_right = 719.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 10" parent="Dessert" unique_id=2025137019 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 791.0
+offset_top = 89.0
+offset_right = 818.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 11" parent="Dessert" unique_id=689910978 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 855.0
+offset_top = 136.0
+offset_right = 879.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Plantable area type 2" parent="Dessert" unique_id=52387165 instance=ExtResource("4_urblq")]
+offset_left = 214.0
+offset_top = 89.0
+offset_right = 243.0
+offset_bottom = 115.0
+
+[node name="Plantable area type 12" parent="Dessert" unique_id=1857558240 instance=ExtResource("4_urblq")]
+offset_left = 342.0
+offset_top = 113.0
+offset_right = 372.0
+offset_bottom = 138.0
+
+[node name="Plantable area type 13" parent="Dessert" unique_id=378467873 instance=ExtResource("4_urblq")]
+offset_left = 436.0
+offset_top = 138.0
+offset_right = 466.0
+offset_bottom = 165.0
+
+[node name="Plantable area type 14" parent="Dessert" unique_id=1139826430 instance=ExtResource("4_urblq")]
+offset_left = 532.0
+offset_top = 113.0
+offset_right = 560.0
+offset_bottom = 140.0
+
+[node name="Plantable area type 15" parent="Dessert" unique_id=280198762 instance=ExtResource("4_urblq")]
+offset_left = 692.0
+offset_top = 113.0
+offset_right = 722.0
+offset_bottom = 137.0
+
+[node name="Plantable area type 16" parent="Dessert" unique_id=1454185437 instance=ExtResource("4_urblq")]
+offset_left = 886.0
+offset_top = 137.0
+offset_right = 912.0
+offset_bottom = 161.0
+
+[node name="Plantable area type 19" parent="Dessert" unique_id=2141525781 instance=ExtResource("3_p5pve")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 247.0
+offset_top = 137.0
+offset_right = 275.0
+offset_bottom = 163.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Plantable area type 21" parent="Dessert" unique_id=1975026068 instance=ExtResource("3_p5pve")]
-offset_left = 382.0
-offset_top = 118.0
-offset_right = 422.0
-offset_bottom = 158.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 375.0
+offset_top = 113.0
+offset_right = 401.0
+offset_bottom = 137.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Plantable area type 20" parent="Dessert" unique_id=525220629 instance=ExtResource("3_p5pve")]
-offset_left = 481.0
-offset_top = 143.0
-offset_right = 521.0
-offset_bottom = 183.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 503.0
+offset_top = 137.0
+offset_right = 530.0
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Map2" type="StaticBody2D" parent="." unique_id=637344768]
 position = Vector2(-37, 3)

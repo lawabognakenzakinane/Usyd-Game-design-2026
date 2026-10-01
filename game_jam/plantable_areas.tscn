@@ -29,11 +29,12 @@ animations = [{
 [node name="Control" type="Control" unique_id=212899294]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 32.0
+offset_bottom = 31.0
 
 [node name="Plantable Areas" type="StaticBody2D" parent="." unique_id=1535384436]
 texture_filter = 1
+position = Vector2(17, -13)
 script = ExtResource("1_qd6br")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plantable Areas" unique_id=289402965]
