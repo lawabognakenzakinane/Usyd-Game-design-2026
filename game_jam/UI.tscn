@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://dew1akwan1qv7"]
+
+[ext_resource type="Texture2D" uid="uid://duxikmsw2ac3u" path="res://UserInterface/Hotbar.png" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://cqvuxvw3l2jnr" path="res://seed.gd" id="3_ee4bf"]
+[ext_resource type="Texture2D" uid="uid://ce31ee6y31rgx" path="res://Asset/item/seed_emu_bush.png" id="3_qtu10"]
+[ext_resource type="Texture2D" uid="uid://vud3tpkcf8vj" path="res://Asset/item/seed_citrus_australasica.png" id="4_iy58a"]
+[ext_resource type="Texture2D" uid="uid://b2xdwxgy4qwkr" path="res://Asset/item/seed_eucalyptus_gillii.png" id="5_6a6wx"]
+[ext_resource type="Script" uid="uid://v4k1b4v1lj86" path="res://shovel.gd" id="6_6a6wx"]
+[ext_resource type="Texture2D" uid="uid://c21m404l5wt7k" path="res://Asset/item/shovel.png" id="6_sky72"]
+[ext_resource type="Texture2D" uid="uid://ckosf0in6uexg" path="res://Asset/item/watering_can.png" id="7_0ytqx"]
+[ext_resource type="Script" uid="uid://bstufyhlpv8x6" path="res://watering_can.gd" id="8_sky72"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i1vam"]
+size = Vector2(22, 22)
+
+[node name="User Intertafce" type="Control" unique_id=394505438]
+layout_mode = 3
+anchor_left = -0.031000001
+anchor_top = 0.185
+anchor_right = 0.15
+anchor_bottom = 0.23200001
+offset_left = -19.287998
+offset_top = -5.880005
+offset_right = 38.199997
+offset_bottom = -7.3359985
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hotbar" type="Control" parent="." unique_id=1718709011]
+layout_mode = 1
+anchor_left = 0.44200003
+anchor_top = 0.776
+anchor_right = 0.44200003
+anchor_bottom = 0.776
+offset_left = -117.57201
+offset_top = -22.504002
+offset_right = 117.42799
+offset_bottom = 22.495998
+
+[node name="Hotbar2" type="Sprite2D" parent="Hotbar" unique_id=936583873]
+texture_filter = 1
+position = Vector2(125, 22)
+texture = ExtResource("1_0fbet")
+
+[node name="Seed" type="Panel" parent="Hotbar" unique_id=1651535727]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 11.0
+offset_right = 95.0
+offset_bottom = 34.0
+script = ExtResource("3_ee4bf")
+
+[node name="Seed" type="StaticBody2D" parent="Hotbar/Seed" unique_id=1385628490]
+
+[node name="SeedEmuBush" type="Sprite2D" parent="Hotbar/Seed/Seed" unique_id=117403119]
+texture_filter = 1
+position = Vector2(9, 10)
+scale = Vector2(0.5625, 0.75)
+texture = ExtResource("3_qtu10")
+
+[node name="Seed2" type="Panel" parent="Hotbar" unique_id=1980028067]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 12.0
+offset_right = 122.0
+offset_bottom = 34.0
+script = ExtResource("3_ee4bf")
+
+[node name="Seed" type="StaticBody2D" parent="Hotbar/Seed2" unique_id=523105609]
+
+[node name="SeedCitrusAustralasica" type="Sprite2D" parent="Hotbar/Seed2" unique_id=1622515192]
+texture_filter = 1
+position = Vector2(9.999998, 9.000002)
+scale = Vector2(0.6015624, 0.72656256)
+texture = ExtResource("4_iy58a")
+
+[node name="Seed3" type="Panel" parent="Hotbar" unique_id=1888216569]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 11.0
+offset_right = 145.0
+offset_bottom = 34.0
+script = ExtResource("3_ee4bf")
+
+[node name="Seed" type="StaticBody2D" parent="Hotbar/Seed3" unique_id=44620212]
+
+[node name="SeedEucalyptusGillii" type="Sprite2D" parent="Hotbar/Seed3" unique_id=868786696]
+texture_filter = 1
+position = Vector2(9.000015, 9)
+scale = Vector2(0.6875, 0.84375)
+texture = ExtResource("5_6a6wx")
+
+[node name="Shovel" type="Panel" parent="Hotbar" unique_id=588907056]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 11.0
+offset_right = 45.0
+offset_bottom = 33.0
+script = ExtResource("6_6a6wx")
+
+[node name="Shovel2" type="Sprite2D" parent="Hotbar/Shovel" unique_id=539797481]
+texture_filter = 1
+position = Vector2(10, 11)
+scale = Vector2(0.625, 0.59375)
+texture = ExtResource("6_sky72")
+
+[node name="Watering can" type="Panel" parent="Hotbar" unique_id=273191048]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 12.0
+offset_right = 73.0
+offset_bottom = 34.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Hotbar/Watering can" unique_id=835677261]
+script = ExtResource("8_sky72")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hotbar/Watering can/StaticBody2D" unique_id=1739948540]
+position = Vector2(12, 11)
+shape = SubResource("RectangleShape2D_i1vam")
+
+[node name="WateringCan" type="Sprite2D" parent="Hotbar/Watering can/StaticBody2D/CollisionShape2D" unique_id=1333790807]
+texture_filter = 1
+position = Vector2(1, -1)
+scale = Vector2(0.84375, 0.875)
+texture = ExtResource("7_0ytqx")

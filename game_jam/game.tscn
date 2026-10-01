@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://b0v8iryu7kv4r"]
 
 [ext_resource type="PackedScene" uid="uid://ulyv6hidtvnj" path="res://map.tscn" id="1_80nbo"]
-[ext_resource type="PackedScene" uid="uid://dew1akwan1qv7" path="res://control.tscn" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://cc82uqhp7r05d" path="res://game.gd" id="1_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://dew1akwan1qv7" path="res://UI.tscn" id="2_e2o6t"]
 [ext_resource type="Script" uid="uid://cj5msvkftm86w" path="res://camera_2d.gd" id="3_feb5d"]
 
 [node name="Game" type="Node2D" unique_id=1522055162]
 position = Vector2(1, 0)
+script = ExtResource("1_fc0e3")
 
 [node name="Map" parent="." unique_id=1591404005 instance=ExtResource("1_80nbo")]
 position = Vector2(3, 1)

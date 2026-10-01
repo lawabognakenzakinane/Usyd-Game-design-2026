@@ -1,7 +1,7 @@
 class_name seed
 extends Panel
 
-@export var plant_selection=false
+var global=preload("res://game.gd")
 
 
 enum Plant_type{
@@ -13,4 +13,4 @@ enum Plant_type{
 func _input(event):
 	if event.is_action_pressed("pressed"):
 		#Switch to plant mode
-		plant_selection=true
+		global.current_state=global.State.PLANT_MODE
