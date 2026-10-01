@@ -3,123 +3,183 @@
 [ext_resource type="PackedScene" uid="uid://dawkslcira5r4" path="res://plantable_areas.tscn" id="1_c7s6e"]
 [ext_resource type="Texture2D" uid="uid://cn3ww8v7s6y30" path="res://Asset/Map/map/gameJam_2026_map_desert.png" id="1_wijl4"]
 [ext_resource type="PackedScene" uid="uid://cyif08o4lvf11" path="res://Plantable area type 2.tscn" id="3_p5pve"]
-[ext_resource type="PackedScene" uid="uid://4eq3ev6lwf54" path="res://Plantable area type 3.tscn" id="4_urblq"]
+[ext_resource type="PackedScene" uid="uid://2l0g86lvg45t" path="res://Plantable area type 3.tscn" id="4_urblq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6lj2"]
 size = Vector2(958, 180)
 
 [node name="Map" type="Node2D" unique_id=1591404005]
 
-[node name="Desert" type="StaticBody2D" parent="." unique_id=1781541067]
+[node name="Dessert" type="StaticBody2D" parent="." unique_id=1781541067]
 position = Vector2(11, -3)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Desert" unique_id=1282768908]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dessert" unique_id=1282768908]
 position = Vector2(473, 94)
 shape = SubResource("RectangleShape2D_e6lj2")
 
-[node name="GameJam2026MapDesert" type="Sprite2D" parent="Desert" unique_id=1734340668]
+[node name="GameJam2026MapDesert" type="Sprite2D" parent="Dessert" unique_id=1734340668]
 texture_filter = 1
 position = Vector2(469, 93)
 texture = ExtResource("1_wijl4")
 
-[node name="Plantable Areas13" parent="Desert" unique_id=1535384436 instance=ExtResource("1_c7s6e")]
-position = Vector2(70, 122)
+[node name="Plantable Areas13" parent="Dessert" unique_id=1535384436 instance=ExtResource("1_c7s6e")]
+position = Vector2(74, 110)
 
-[node name="Plantable Areas" parent="Desert" unique_id=285955447 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas" parent="Dessert" unique_id=285955447 instance=ExtResource("1_c7s6e")]
 position = Vector2(39, 74)
 
-[node name="Plantable Areas2" parent="Desert" unique_id=1642051165 instance=ExtResource("1_c7s6e")]
-position = Vector2(198, 122)
+[node name="Plantable Areas2" parent="Dessert" unique_id=1642051165 instance=ExtResource("1_c7s6e")]
+position = Vector2(196, 108)
 
-[node name="Plantable Areas3" parent="Desert" unique_id=1248028832 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas3" parent="Dessert" unique_id=1248028832 instance=ExtResource("1_c7s6e")]
 position = Vector2(392, 77)
 
-[node name="Plantable Areas4" parent="Desert" unique_id=1615780905 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas4" parent="Dessert" unique_id=1615780905 instance=ExtResource("1_c7s6e")]
 position = Vector2(454, 98)
 
-[node name="Plantable Areas5" parent="Desert" unique_id=1066110056 instance=ExtResource("1_c7s6e")]
-position = Vector2(806, 121)
+[node name="Plantable Areas5" parent="Dessert" unique_id=1066110056 instance=ExtResource("1_c7s6e")]
+position = Vector2(810, 108)
 
-[node name="Plantable Areas6" parent="Desert" unique_id=1715821221 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas6" parent="Dessert" unique_id=1715821221 instance=ExtResource("1_c7s6e")]
 position = Vector2(774, 99)
 
-[node name="Plantable Areas7" parent="Desert" unique_id=131365381 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas7" parent="Dessert" unique_id=131365381 instance=ExtResource("1_c7s6e")]
 position = Vector2(166, 74)
 
-[node name="Plantable Areas8" parent="Desert" unique_id=1061165316 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas8" parent="Dessert" unique_id=1061165316 instance=ExtResource("1_c7s6e")]
 position = Vector2(359, 98)
 
-[node name="Plantable Areas9" parent="Desert" unique_id=1042884371 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas9" parent="Dessert" unique_id=1042884371 instance=ExtResource("1_c7s6e")]
 position = Vector2(583, 98)
 
-[node name="Plantable Areas10" parent="Desert" unique_id=905693 instance=ExtResource("1_c7s6e")]
-position = Vector2(710, 122)
+[node name="Plantable Areas10" parent="Dessert" unique_id=905693 instance=ExtResource("1_c7s6e")]
+position = Vector2(715, 106)
 
-[node name="Plantable Areas11" parent="Desert" unique_id=767656499 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas11" parent="Dessert" unique_id=767656499 instance=ExtResource("1_c7s6e")]
 position = Vector2(742, 75)
 
-[node name="Plantable Areas12" parent="Desert" unique_id=426892601 instance=ExtResource("1_c7s6e")]
+[node name="Plantable Areas12" parent="Dessert" unique_id=426892601 instance=ExtResource("1_c7s6e")]
 position = Vector2(871, 74)
 
-[node name="Plantable area type 3" parent="Desert" unique_id=1486156061 instance=ExtResource("3_p5pve")]
-position = Vector2(33, 151)
+[node name="Plantable area type 3" parent="Dessert" unique_id=1486156061 instance=ExtResource("3_p5pve")]
+offset_left = 32.0
+offset_top = 136.0
+offset_right = 72.0
+offset_bottom = 176.0
 
-[node name="Plantable area type 17" parent="Desert" unique_id=167121035 instance=ExtResource("3_p5pve")]
-position = Vector2(129, 151)
+[node name="Plantable area type 17" parent="Dessert" unique_id=167121035 instance=ExtResource("3_p5pve")]
+offset_left = 128.0
+offset_top = 139.0
+offset_right = 168.0
+offset_bottom = 179.0
 
-[node name="Plantable area type 4" parent="Desert" unique_id=2143017727 instance=ExtResource("3_p5pve")]
-position = Vector2(97, 127)
+[node name="Plantable area type 4" parent="Dessert" unique_id=2143017727 instance=ExtResource("3_p5pve")]
+offset_left = 96.0
+offset_top = 116.0
+offset_right = 136.0
+offset_bottom = 156.0
 
-[node name="Plantable area type 18" parent="Desert" unique_id=366057114 instance=ExtResource("3_p5pve")]
-position = Vector2(257, 103)
+[node name="Plantable area type 18" parent="Dessert" unique_id=366057114 instance=ExtResource("3_p5pve")]
+offset_left = 257.0
+offset_top = 103.0
+offset_right = 297.0
+offset_bottom = 143.0
 
-[node name="Plantable area type 5" parent="Desert" unique_id=767152624 instance=ExtResource("3_p5pve")]
-position = Vector2(225, 127)
+[node name="Plantable area type 5" parent="Dessert" unique_id=767152624 instance=ExtResource("3_p5pve")]
+offset_left = 225.0
+offset_top = 127.0
+offset_right = 265.0
+offset_bottom = 167.0
 
-[node name="Plantable area type 6" parent="Desert" unique_id=1870581439 instance=ExtResource("3_p5pve")]
-position = Vector2(546, 151)
+[node name="Plantable area type 6" parent="Dessert" unique_id=1870581439 instance=ExtResource("3_p5pve")]
+offset_left = 543.0
+offset_top = 142.0
+offset_right = 583.0
+offset_bottom = 182.0
 
-[node name="Plantable area type 7" parent="Desert" unique_id=1995471263 instance=ExtResource("3_p5pve")]
-position = Vector2(481, 103)
+[node name="Plantable area type 7" parent="Dessert" unique_id=1995471263 instance=ExtResource("3_p5pve")]
+offset_left = 481.0
+offset_top = 103.0
+offset_right = 521.0
+offset_bottom = 143.0
 
-[node name="Plantable area type 8" parent="Desert" unique_id=1518281864 instance=ExtResource("3_p5pve")]
-position = Vector2(674, 128)
+[node name="Plantable area type 8" parent="Dessert" unique_id=1518281864 instance=ExtResource("3_p5pve")]
+offset_left = 670.0
+offset_top = 128.0
+offset_right = 710.0
+offset_bottom = 168.0
 
-[node name="Plantable area type 9" parent="Desert" unique_id=557674599 instance=ExtResource("3_p5pve")]
-position = Vector2(705, 103)
+[node name="Plantable area type 9" parent="Dessert" unique_id=557674599 instance=ExtResource("3_p5pve")]
+offset_left = 705.0
+offset_top = 103.0
+offset_right = 745.0
+offset_bottom = 143.0
 
-[node name="Plantable area type 10" parent="Desert" unique_id=2025137019 instance=ExtResource("3_p5pve")]
-position = Vector2(818, 103)
+[node name="Plantable area type 10" parent="Dessert" unique_id=2025137019 instance=ExtResource("3_p5pve")]
+offset_left = 818.0
+offset_top = 103.0
+offset_right = 858.0
+offset_bottom = 143.0
 
-[node name="Plantable area type 11" parent="Desert" unique_id=689910978 instance=ExtResource("3_p5pve")]
-position = Vector2(865, 127)
+[node name="Plantable area type 11" parent="Dessert" unique_id=689910978 instance=ExtResource("3_p5pve")]
+offset_left = 865.0
+offset_top = 127.0
+offset_right = 905.0
+offset_bottom = 167.0
 
-[node name="Plantable area type 2" parent="Desert" unique_id=52387165 instance=ExtResource("4_urblq")]
-position = Vector2(229, 101)
+[node name="Plantable area type 2" parent="Dessert" unique_id=52387165 instance=ExtResource("4_urblq")]
+offset_left = 229.0
+offset_top = 101.0
+offset_right = 269.0
+offset_bottom = 141.0
 
-[node name="Plantable area type 12" parent="Desert" unique_id=1857558240 instance=ExtResource("4_urblq")]
-position = Vector2(357, 149)
+[node name="Plantable area type 12" parent="Dessert" unique_id=1857558240 instance=ExtResource("4_urblq")]
+offset_left = 328.0
+offset_top = 137.0
+offset_right = 368.0
+offset_bottom = 177.0
 
-[node name="Plantable area type 13" parent="Desert" unique_id=378467873 instance=ExtResource("4_urblq")]
-position = Vector2(421, 149)
+[node name="Plantable area type 13" parent="Dessert" unique_id=378467873 instance=ExtResource("4_urblq")]
+offset_left = 416.0
+offset_top = 140.0
+offset_right = 456.0
+offset_bottom = 180.0
 
-[node name="Plantable area type 14" parent="Desert" unique_id=1139826430 instance=ExtResource("4_urblq")]
-position = Vector2(516, 125)
+[node name="Plantable area type 14" parent="Dessert" unique_id=1139826430 instance=ExtResource("4_urblq")]
+offset_left = 514.0
+offset_top = 122.0
+offset_right = 554.0
+offset_bottom = 162.0
 
-[node name="Plantable area type 15" parent="Desert" unique_id=280198762 instance=ExtResource("4_urblq")]
-position = Vector2(677, 101)
+[node name="Plantable area type 15" parent="Dessert" unique_id=280198762 instance=ExtResource("4_urblq")]
+offset_left = 677.0
+offset_top = 101.0
+offset_right = 717.0
+offset_bottom = 141.0
 
-[node name="Plantable area type 16" parent="Desert" unique_id=1454185437 instance=ExtResource("4_urblq")]
-position = Vector2(899, 125)
+[node name="Plantable area type 16" parent="Dessert" unique_id=1454185437 instance=ExtResource("4_urblq")]
+offset_left = 899.0
+offset_top = 125.0
+offset_right = 939.0
+offset_bottom = 165.0
 
-[node name="Plantable area type 19" parent="Desert" unique_id=2141525781 instance=ExtResource("3_p5pve")]
-position = Vector2(257, 151)
+[node name="Plantable area type 19" parent="Dessert" unique_id=2141525781 instance=ExtResource("3_p5pve")]
+offset_left = 264.0
+offset_top = 138.0
+offset_right = 304.0
+offset_bottom = 178.0
 
-[node name="Plantable area type 21" parent="Desert" unique_id=1975026068 instance=ExtResource("3_p5pve")]
-position = Vector2(386, 127)
+[node name="Plantable area type 21" parent="Dessert" unique_id=1975026068 instance=ExtResource("3_p5pve")]
+offset_left = 382.0
+offset_top = 118.0
+offset_right = 422.0
+offset_bottom = 158.0
 
-[node name="Plantable area type 20" parent="Desert" unique_id=525220629 instance=ExtResource("3_p5pve")]
-position = Vector2(481, 151)
+[node name="Plantable area type 20" parent="Dessert" unique_id=525220629 instance=ExtResource("3_p5pve")]
+offset_left = 481.0
+offset_top = 143.0
+offset_right = 521.0
+offset_bottom = 183.0
 
 [node name="Map2" type="StaticBody2D" parent="." unique_id=637344768]
 position = Vector2(-37, 3)

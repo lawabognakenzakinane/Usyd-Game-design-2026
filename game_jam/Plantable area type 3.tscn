@@ -1,20 +1,36 @@
-[gd_scene format=3 uid="uid://4eq3ev6lwf54"]
+[gd_scene format=3 uid="uid://2l0g86lvg45t"]
 
 [ext_resource type="Texture2D" uid="uid://euyn71lt86us" path="res://Asset/Map/map/hole_desert_1.png" id="1_dhyf3"]
 
 [sub_resource type="GDScript" id="GDScript_x7ufw"]
+script/source = "extends StaticBody2D
+var global=preload(\"res://game.gd\")
+
+func _on_control_gui_input(event: InputEvent) -> void:
+	if Input.is_action_pressed(\"pressed\")==true:
+		global.current_state=main.State.PLANT_MODE
+		print(\"Plant area mode type 2\")
+"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dhyf3"]
 radius = 14.0
 
-[node name="Plantable area type 3" type="StaticBody2D" unique_id=1486156061]
+[node name="Control" type="Control" unique_id=212830288]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Plantable area type 3" type="StaticBody2D" parent="." unique_id=1486156061]
 texture_filter = 1
 script = SubResource("GDScript_x7ufw")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1431105202]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plantable area type 3" unique_id=1431105202]
 position = Vector2(1, 1)
 shape = SubResource("CircleShape2D_dhyf3")
 
-[node name="HoleDesert1" type="Sprite2D" parent="." unique_id=1560807921]
+[node name="HoleDesert1" type="Sprite2D" parent="Plantable area type 3" unique_id=1560807921]
 position = Vector2(1, -4)
 texture = ExtResource("1_dhyf3")
+
+[connection signal="gui_input" from="." to="Plantable area type 3" method="_on_control_gui_input"]
