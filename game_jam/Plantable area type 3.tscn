@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_dhyf3"]
 radius = 14.0
 
-[node name="Plantable area type 2" type="StaticBody2D" unique_id=1486156061]
+[node name="Plantable area type 3" type="StaticBody2D" unique_id=1486156061]
 texture_filter = 1
 script = SubResource("GDScript_x7ufw")
 
