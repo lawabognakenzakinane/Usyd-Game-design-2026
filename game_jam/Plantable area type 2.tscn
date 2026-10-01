@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cyif08o4lvf11"]
+
+[ext_resource type="Texture2D" uid="uid://cafgnbofegbk7" path="res://Asset/Map/map/hole_desert_2.png" id="1_t6kl5"]
+
+[sub_resource type="GDScript" id="GDScript_x7ufw"]
+script/source = "
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t6kl5"]
+radius = 13.341664
+
+[node name="Plantable area type 3" type="StaticBody2D" unique_id=1486156061]
+script = SubResource("GDScript_x7ufw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1431105202]
+position = Vector2(3, 0)
+shape = SubResource("CircleShape2D_t6kl5")
+
+[node name="HoleDesert2" type="Sprite2D" parent="." unique_id=580013378]
+position = Vector2(3, -6)
+texture = ExtResource("1_t6kl5")

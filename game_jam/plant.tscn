@@ -1,40 +1,43 @@
 [gd_scene format=3 uid="uid://bbk1x23dhkfkc"]
 
-[ext_resource type="Script" uid="uid://dr31ujvb3pya8" path="res://eucalyptus_gillii.gd" id="1_o882y"]
-[ext_resource type="Script" uid="uid://c2w151831o70j" path="res://jacaranda.gd" id="1_qljma"]
+[ext_resource type="Script" uid="uid://kktoi66dbp73" path="res://plant.gd" id="1_mbetm"]
 [ext_resource type="Script" uid="uid://cyk2ry3hvkr6i" path="res://emu_bush.gd" id="1_t03al"]
-[ext_resource type="Script" uid="uid://dh6g0gyo15wda" path="res://citrus_australasica_x.gd" id="2_668is"]
-[ext_resource type="Script" uid="uid://pfnoes2mg58o" path="res://kangaroo_paw.gd" id="3_kj8pc"]
-[ext_resource type="Script" uid="uid://byrjryle10j2r" path="res://sturts_desert_pea.gd" id="4_nce5f"]
-[ext_resource type="Script" uid="uid://bps4woip24qex" path="res://wattle.gd" id="5_7q05p"]
-[ext_resource type="Script" uid="uid://b80lv5g1gu1l1" path="res://bottle_brush.gd" id="6_l55wq"]
-[ext_resource type="Script" uid="uid://bcsdphufu0esw" path="res://gum_tree.gd" id="7_ged3i"]
+[ext_resource type="Script" uid="uid://cvc7cx03mr0f1" path="res://animated_sprite_2d.gd" id="3_uc8tw"]
+[ext_resource type="Texture2D" uid="uid://l7glaho3t0nh" path="res://Asset/plant/emu_bush_stage_1.png" id="4_t2kmy"]
+[ext_resource type="Texture2D" uid="uid://ccupvb5fbxvg4" path="res://Asset/plant/emu_bush_stage_2.png" id="5_o882y"]
+[ext_resource type="Texture2D" uid="uid://byv416ue0c4bl" path="res://Asset/plant/emu_bush_stage_3.png" id="6_668is"]
+[ext_resource type="Texture2D" uid="uid://i600bs2jrkns" path="res://Asset/plant/emu_bush_stage_4.png" id="7_kj8pc"]
+[ext_resource type="Texture2D" uid="uid://b8a1fkisb000q" path="res://Asset/plant/emu_bush_stage_5.png" id="8_nce5f"]
 
-[node name="Plant" unique_id=1110712558]
+[sub_resource type="SpriteFrames" id="SpriteFrames_7q05p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_t2kmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o882y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_668is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kj8pc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_nce5f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
-[node name="Eucalyptus Gillii" type="CharacterBody2D" parent="." index="1" unique_id=303968270]
-script = ExtResource("1_o882y")
+[node name="Plant" type="StaticBody2D" unique_id=21971586]
+script = ExtResource("1_mbetm")
 
-[node name="Citrus australasica x" type="CharacterBody2D" parent="." index="2" unique_id=705312498]
-script = ExtResource("2_668is")
-
-[node name="Kangaroo paw" type="CharacterBody2D" parent="." index="3" unique_id=816733668]
-script = ExtResource("3_kj8pc")
-
-[node name="Sturts desert pea" type="CharacterBody2D" parent="." index="4" unique_id=994072963]
-script = ExtResource("4_nce5f")
-
-[node name="Wattle" type="CharacterBody2D" parent="." index="5" unique_id=485444011]
-script = ExtResource("5_7q05p")
-
-[node name="Bottle brush" type="CharacterBody2D" parent="." index="6" unique_id=1354506008]
-script = ExtResource("6_l55wq")
-
-[node name="Gum tree" type="CharacterBody2D" parent="." index="7" unique_id=2013816710]
-script = ExtResource("7_ged3i")
-
-[node name="Jacaranda" type="CharacterBody2D" parent="." index="8" unique_id=763472942]
-script = ExtResource("1_qljma")
-
-[node name="Emu Bush" type="CharacterBody2D" parent="." index="9" unique_id=1299513976]
+[node name="Emu Bush" type="StaticBody2D" parent="." unique_id=1057556341]
 script = ExtResource("1_t03al")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Emu Bush" unique_id=1805077117]
+sprite_frames = SubResource("SpriteFrames_7q05p")
+script = ExtResource("3_uc8tw")

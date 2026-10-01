@@ -1,20 +1,19 @@
 [gd_scene format=3 uid="uid://dawkslcira5r4"]
 
 [ext_resource type="Script" uid="uid://mmeqfpkeahce" path="res://plantable_areas.gd" id="1_qd6br"]
+[ext_resource type="Texture2D" uid="uid://rexjr6m2pxaq" path="res://Asset/Map/map/hole_desert_3.png" id="2_7tqu5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qd6br"]
-size = Vector2(36, 41)
+[sub_resource type="CircleShape2D" id="CircleShape2D_oxhxu"]
+radius = 16.0
 
 [node name="Plantable Areas" type="StaticBody2D" unique_id=1535384436]
 script = ExtResource("1_qd6br")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=289402965]
-position = Vector2(0, 16)
-shape = SubResource("RectangleShape2D_qd6br")
+position = Vector2(-1, 29)
+shape = SubResource("CircleShape2D_oxhxu")
 
-[node name="PLaceholder" type="ColorRect" parent="." unique_id=607125173]
-offset_left = -13.0
-offset_top = -3.0
-offset_right = 14.0
-offset_bottom = 32.0
-color = Color(0.8724147, 0.33109984, 9.62615e-07, 1)
+[node name="HoleDesert3" type="Sprite2D" parent="." unique_id=17830800]
+position = Vector2(-1, 23)
+scale = Vector2(1.09375, 1)
+texture = ExtResource("2_7tqu5")

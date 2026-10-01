@@ -8,12 +8,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="New plant button" type="Panel" parent="." unique_id=607015723]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="Plant Collection menu" type="ScrollContainer" parent="." unique_id=1257061225]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.07300001
+anchor_top = -0.042000003
+anchor_right = -0.07300001
+anchor_bottom = -0.042000003
+offset_left = 17.096008
+offset_top = -60.783997
+offset_right = 57.09601
+offset_bottom = -20.783998
